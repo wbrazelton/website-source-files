@@ -1,0 +1,81 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: William J. Brazelton
+email: wbrazelton@gmail.com
+description: Microbiology, Bioinformatics, Oceanography, Ecology, Astrobiology
+url: https://wbrazelton.github.io/
+twitter_username: wbrazelton
+github_username:  wbrazelton
+
+# Build settings
+encoding: utf-8
+markdown: kramdown
+permalink: /:categories/:title/
+future: true
+sass:
+  sass_dir: css
+
+# add new projects here
+projects:
+  - Brazelton-Lab/lab_scripts
+  - Brazelton-Lab/bio_utils
+  - Brazelton-Lab/protocols    
+  - Brazelton-Lab/seq-annot
+  - Brazelton-Lab/seq-qc
+  - Brazelton-Lab/McGonigle-BSF-Metagenome-2021
+  - Brazelton-Lab/McGonigle-2019-LCY
+  - Brazelton-Lab/Atlantis-Massif-2015
+  - Brazelton-Lab/Thornton_2020
+  - Brazelton-Lab/oak
+  - Brazelton-Lab/Dangerfield-2017
+      
+exclude:
+  - node_modules
+  - "*.branches"
+  - "*.class"
+  - "*.cpp"
+  - "*.csv"
+  - "*.fasta"
+  - "*.gz"
+  - "*.h"
+  - "*.hh"
+  - "*.ipynb"
+  - "*.jar"
+  - "*.java"
+  - "*.kml"
+  - "*.log"
+  - "*.mcc"
+  - "*.nb"
+  - "*.newick"
+  - "*.nex"
+  - "*.py"
+  - "*.R"
+  - "*.rb"
+  - "*.Rmd"
+  - "*.tiff"
+  - "*.tips"
+  - "*.trees"
+  - "*.tsv"
+  - "*.txt"
+  - "*.xml"
+  - "*.zip"
+  - "Gemfile"
+  - "Gemfile.lock"
