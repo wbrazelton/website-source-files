@@ -29,6 +29,11 @@ h5, .h5 { font-size: $font-size-base; }
 h6, .h6 { font-size: ceil($font-size-base * 0.85); }  /* ~12px */
 
 //my personal additions
+$font-family-sans-serif: Barlow!important;
+//Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+body {background-color: #F3F0DC!important;}
+
 figure {
   display: table;
   //width: min-content;
@@ -62,17 +67,7 @@ figcaption {
   padding-left: 10px;
 }
 
-/* typekit */
-
-.wf-loading {
-    visibility: hidden;
-}
-.wf-active {
-	visibility: visible;
-}
-
 /* general */
-
 .container {
   padding-left: 25px;
   padding-right: 25px;
