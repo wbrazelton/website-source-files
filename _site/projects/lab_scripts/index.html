@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>lab_scripts/</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+
+  <!-- Customized Bootstrap + Font Awesome + Solarized -->
+  <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbar-brand" href="/">W.J. Brazelton</a>
+<!-- 
+				<a class="navbar-brand" href="/">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/sulis_20180916180909_smaller2_sq.png".svg">
+				</a>
+ -->
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/papers/">publications</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/projects/">data</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/blog/">blog</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/about/">about</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container mt-4">
+
+	
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="bigtitle titlebox">
+      <nav aria-label="breadcrumb">
+  			<ol class="breadcrumb">
+  			
+  			
+  				
+  				
+  				
+  				<li class="breadcrumb-item active">
+            lab_scripts
+          </li>
+  				
+  			
+  			</ol>
+      </nav>
+    </div>
+		<p>
+		<div class="head">
+			Standalone scripts used in the lab's various bioinformatics workflows
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Source code
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-cog fa-fw"></i>
+			<a class="off" href="https://github.com/Brazelton-Lab/lab_scripts">github.com/Brazelton-Lab/<wbr>lab_<wbr>scripts</a>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Contributors
+		</div>
+		<div class="pad-left note">
+			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/TheOneHyer">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/8741979?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				TheOneHyer
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/cnthornton">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/6643118?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				cnthornton
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/wbrazelton">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/9274665?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				wbrazelton
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/cliqueNick">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/25556485?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				cliqueNick
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/studlee">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/20520087?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				studlee
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Latest commits
+		</div>
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/lab_scripts/commit/97555f90fff6b71b800f4e6b440788440f8b76ff">
+					18 Jun 2021 - <span class="text-gray">new script for linking viral and host contigs</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/lab_scripts/commit/67b9b55cdfd2e4c6ad1a01ec2ccd9061e41db0eb">
+					17 Jun 2021 - <span class="text-gray">added table report functionality</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/lab_scripts/commit/a51c8540a19258d39e1bd2a85bd6d3abfcac7075">
+					19 May 2021 - <span class="text-gray">added two new scripts for working with large files</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/lab_scripts/commit/08cd874f74e99aefc08964662ec1769070d89c90">
+					21 Mar 2021 - <span class="text-gray">updated bin coverage script to include options for either sums or weighted averages</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/lab_scripts/commit/c36ce54952e825f35496f05e0702be9fc118a266">
+					21 Mar 2021 - <span class="text-gray">new script to normalize contig coverages to TPM</span>
+					</a>
+				</li>
+			
+			</ul>
+		</div>
+		<div class="spacer"></div>
+
+		
+			
+		
+			
+		
+			
+		
+			
+			<!-- 22 -->
+			
+		
+			
+			<!-- 23 -->
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+			<!-- 24 -->
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+		<div class="smallhead">
+			Pages
+		</div>
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			
+				
+			
+				
+			
+				
+			
+				
+				<div class="smallspacer"></div>
+				<li>
+					<a class="off" href="/projects/lab_scripts/LICENSE.html">
+					<i class="fa fa-folder-open-o"></i>  / LICENSE
+					</a>
+				</li>
+				
+			
+				
+				<div class="smallspacer"></div>
+				<li>
+					<a class="off" href="/projects/lab_scripts/tutorials/Lab_Meeting_Modules_2017-12-05.html">
+					<i class="fa fa-folder-open-o"></i>  / tutorials / Lab_Meeting_Modules_2017-12-05
+					</a>
+				</li>
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+				<div class="smallspacer"></div>
+				<li>
+					<a class="off" href="/projects/lab_scripts/">
+					<i class="fa fa-folder-open-o"></i>  / 
+					</a>
+				</li>
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+		</div>
+		<div class="spacer"></div>
+		
+
+	</div>
+	<div class="col-lg-8">
+		<div class="post">
+			<p>
+			<h1 id="lab_scripts">lab_scripts</h1>
+<p>scripts used in the lab’s various bioinformatics workflows</p>
+
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+
+
+	</div>
+
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>

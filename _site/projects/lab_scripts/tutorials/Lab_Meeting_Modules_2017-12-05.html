@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>lab_scripts/tutorials/Lab_Meeting_Modules_2017-12-05</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+
+  <!-- Customized Bootstrap + Font Awesome + Solarized -->
+  <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbar-brand" href="/">W.J. Brazelton</a>
+<!-- 
+				<a class="navbar-brand" href="/">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/sulis_20180916180909_smaller2_sq.png".svg">
+				</a>
+ -->
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/papers/">publications</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/projects/">data</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/blog/">blog</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/about/">about</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container mt-4">
+
+	
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="bigtitle titlebox">
+      <nav aria-label="breadcrumb">
+  			<ol class="breadcrumb">
+  			
+  			
+  				
+  				
+  				
+  				<li class="breadcrumb-item active">
+            Lab_Meeting_Modules_2017-12-05
+          </li>
+  				
+  			
+  			</ol>
+      </nav>
+    </div>
+		<p>
+		<div class="head">
+			Standalone scripts used in the lab's various bioinformatics workflows
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Source code
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-cog fa-fw"></i>
+			<a class="off" href="https://github.com/Brazelton-Lab/lab_scripts">github.com/Brazelton-Lab/<wbr>lab_<wbr>scripts</a>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Contributors
+		</div>
+		<div class="pad-left note">
+			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/TheOneHyer">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/8741979?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				TheOneHyer
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/cnthornton">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/6643118?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				cnthornton
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/wbrazelton">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/9274665?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				wbrazelton
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/cliqueNick">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/25556485?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				cliqueNick
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/studlee">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/20520087?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				studlee
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Latest commits
+		</div>
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/lab_scripts/commit/97555f90fff6b71b800f4e6b440788440f8b76ff">
+					18 Jun 2021 - <span class="text-gray">new script for linking viral and host contigs</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/lab_scripts/commit/67b9b55cdfd2e4c6ad1a01ec2ccd9061e41db0eb">
+					17 Jun 2021 - <span class="text-gray">added table report functionality</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/lab_scripts/commit/a51c8540a19258d39e1bd2a85bd6d3abfcac7075">
+					19 May 2021 - <span class="text-gray">added two new scripts for working with large files</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/lab_scripts/commit/08cd874f74e99aefc08964662ec1769070d89c90">
+					21 Mar 2021 - <span class="text-gray">updated bin coverage script to include options for either sums or weighted averages</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/lab_scripts/commit/c36ce54952e825f35496f05e0702be9fc118a266">
+					21 Mar 2021 - <span class="text-gray">new script to normalize contig coverages to TPM</span>
+					</a>
+				</li>
+			
+			</ul>
+		</div>
+		<div class="spacer"></div>
+
+		
+			
+		
+			
+		
+			
+		
+			
+			<!-- 7 -->
+			
+		
+			
+			<!-- 8 -->
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+			<!-- 9 -->
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+		<div class="smallhead">
+			Pages
+		</div>
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			
+				
+			
+				
+			
+				
+			
+				
+				<div class="smallspacer"></div>
+				<li>
+					<a class="off" href="/projects/lab_scripts/LICENSE.html">
+					<i class="fa fa-folder-open-o"></i>  / LICENSE
+					</a>
+				</li>
+				
+			
+				
+				<div class="smallspacer"></div>
+				<li>
+					<a class="off" href="/projects/lab_scripts/tutorials/Lab_Meeting_Modules_2017-12-05.html">
+					<i class="fa fa-folder-open-o"></i>  / tutorials / Lab_Meeting_Modules_2017-12-05
+					</a>
+				</li>
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+				<div class="smallspacer"></div>
+				<li>
+					<a class="off" href="/projects/lab_scripts/">
+					<i class="fa fa-folder-open-o"></i>  / 
+					</a>
+				</li>
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+		</div>
+		<div class="spacer"></div>
+		
+
+	</div>
+	<div class="col-lg-8">
+		<div class="post">
+			<p>
+			<h1 id="modules-tutorial">Modules Tutorial</h1>
+
+<p>By: Alex Hyer (theonehyer@gmail.com)</p>
+
+<p>This tutorial will cover how to use the <code class="language-plaintext highlighter-rouge">module</code> program on the Brazelton Lab Cluster. To follow along, you must login to said cluster using the crednetials provided to you by a Systems Administrator. Additionally, this tutorial will briefly cover BASH variables and environmental variables (EV) as understanding them is necessary for understanding <code class="language-plaintext highlighter-rouge">modules</code>.</p>
+
+<h2 id="bash-variables">BASH Variables</h2>
+
+<p>BASH stands for Bourne Again SHell and is the most common terminal interface in *nix systems. BASH is both a shell and a scripting language, meaning you can program in the tutorial. The following example makes three empty files using <code class="language-plaintext highlighter-rouge">touch</code>, uses a <code class="language-plaintext highlighter-rouge">for loop</code> to print files names starting with “test”, and then deletes them with <code class="language-plaintext highlighter-rouge">rm</code>. <em>Note: a <code class="language-plaintext highlighter-rouge">for loop</code> is a programming construct. Thus, thus the following example uses code in the terminal.</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">touch </span>test1 test2 test3            <span class="c"># Create three empty files</span>
+<span class="k">for </span>f <span class="k">in </span><span class="nb">test</span><span class="k">*</span><span class="p">;</span> <span class="k">do </span><span class="nb">echo</span> <span class="nv">$f</span><span class="p">;</span> <span class="k">done</span><span class="p">;</span>  <span class="c"># Print file names, bad version of `ls`</span>
+<span class="nb">rm </span>test1 test2 test3               <span class="c"># Delete the files</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>test1
+test2
+test3
+</code></pre></div></div>
+
+<p>Just like in a programming language, you can save and use variables in BASH. Variables can be assigned using the format <code class="language-plaintext highlighter-rouge">variableName=content</code>. Variables can be accessed using <code class="language-plaintext highlighter-rouge">$variableName</code> or <code class="language-plaintext highlighter-rouge">${variableName}</code>. The latter method is prefered as it allows you to insert variables into other strings/words. The following code block demonstrates these concepts:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">HELLO</span><span class="o">=</span><span class="s2">"WORLD"</span>  <span class="c"># Define new variable HELLO</span>
+<span class="nb">echo</span> <span class="nv">$HELLO</span>    <span class="c"># Prints "WORLD", this is the most common example online</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WORLD
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">HELLO</span><span class="o">=</span><span class="s2">"WORLD"</span>
+<span class="nb">echo</span> <span class="k">${</span><span class="nv">HELLO</span><span class="k">}</span>  <span class="c"># Prints "WORLD", this is the better habit</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WORLD
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">HELLO</span><span class="o">=</span><span class="s2">"WORLD"</span>
+<span class="nb">echo</span> <span class="nv">$HELLOWORLD</span>  <span class="c"># Prints nothing as there is no variable HELLOWORLD</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">HELLO</span><span class="o">=</span><span class="s2">"WORLD"</span>
+<span class="nb">echo</span> <span class="k">${</span><span class="nv">HELLO</span><span class="k">}</span>WORLD  <span class="c"># Prints "WORLDWORLD"</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WORLDWORLD
+</code></pre></div></div>
+
+<p>Notice in the last two examples that <code class="language-plaintext highlighter-rouge">echo $HELLOWORLD</code> tries to print a variable called <code class="language-plaintext highlighter-rouge">HELLOWORLD</code> and <code class="language-plaintext highlighter-rouge">echo ${HELLO}WORLD</code> prints out the variable <code class="language-plaintext highlighter-rouge">HELLO</code> and adds “WORLD” to the end of it. This is why accessing variables via curly brackets is prefered.</p>
+
+<p>BASH variables in the terminal can be used to save things like number of CPUs to use in programs, where to store log files, etc.</p>
+
+<h2 id="environmental-variables">Environmental Variables</h2>
+
+<p>Environmental variables are variables available to an entire operating system that affect how a system runs. For example, the <code class="language-plaintext highlighter-rouge">PATH</code> EV defines what folders contain executables (read programs) on the system and <code class="language-plaintext highlighter-rouge">HOME</code> points towards a users home directory.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="nv">$PATH</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="nv">$HOME</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/ahyer
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">printenv</code> command will print all current environmental variables. There are quite a few EVs so this tends to produce a lot of output.</p>
+
+<h2 id="modules">Modules</h2>
+
+<p>The program <code class="language-plaintext highlighter-rouge">module</code> allows users and administrators to define EVs in file that can be loaded and unloaded for specific programs, projects, etc. Since EVs affect how a system operates, <code class="language-plaintext highlighter-rouge">module</code> allows users to define how they want things to work in their session and is thus highly flexible. The following sections cover two ways we use <code class="language-plaintext highlighter-rouge">module</code> on the Brazelton Lab Cluster. Before discussing these sepcific case, I will cover a few basics of <code class="language-plaintext highlighter-rouge">module</code>. <em>Note: this is not a comprehensive tutorial.</em></p>
+
+<h3 id="basics">Basics</h3>
+
+<p>Modules are files that can be utilized by <code class="language-plaintext highlighter-rouge">module</code>. “Loading” a module will change your EVs by adding, deleting, or modifying them. To load a module, use (note that you can tab autocomplete module names):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module load &lt;module name&gt;
+</code></pre></div></div>
+
+<p>And unload them with:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module unload &lt;module name&gt;
+</code></pre></div></div>
+
+<p>Modules can also conflict with each other and <code class="language-plaintext highlighter-rouge">module</code> will refuse to load conflicting modules. Make sure to use ` module switch` or unload the one module before loading another if two modules conflict. A few more commands with brief explainations follow.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module avail       <span class="c"># Prints all available modules and where they're located</span>
+module list        <span class="c"># List currently loaded modules</span>
+module unload all  <span class="c"># Remove all loaded modules</span>
+module switch module1 module2  <span class="c"># Unload module1 and load module2</span>
+</code></pre></div></div>
+
+<h3 id="programs">Programs</h3>
+
+<p>Ever since 2017-05-26, all newly installed or updated programs on the Brazelton Lab Software and versioned under a <code class="language-plaintext highlighter-rouge">module</code>-based system. Under this system, every version of a program we install is kept and made accessible. For example, as of this writing, the cluster has <code class="language-plaintext highlighter-rouge">anvio</code> versions 2.0.2, 2.2.2, 2.3.2, and 2.4.0. By default, the cluster always uses the latest version of a program. However, older versions can be loaded via:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module load programs/&lt;program name&gt;-&lt;version number&gt;
+</code></pre></div></div>
+
+<p>Type the following commands on the cluster to see the system in action:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module list               <span class="c"># You likely have nothing loaded</span>
+srun anvi-interactive <span class="nt">-v</span>  <span class="c"># This prints anvi'o's latest version</span>
+module load programs/anvio-2.3.2
+module list               <span class="c"># Notice the loaded module</span>
+srun anvi-interactive <span class="nt">-v</span>  <span class="c"># Note the version is 2.3.2</span>
+module switch programs/anvio-2.3.2 programs/anvio-2.2.2
+module list
+srun anvi-interactive <span class="nt">-v</span>  <span class="c"># Note the version is 2.2.2</span>
+module unload programs/anvio-2.2.2
+module list               <span class="c"># You should have nothing loaded</span>
+srun anvi-interactive <span class="nt">-v</span>  <span class="c"># Note the version is now the latest version</span>
+</code></pre></div></div>
+
+<p>Note that we’re using <code class="language-plaintext highlighter-rouge">srun</code> here, which means <code class="language-plaintext highlighter-rouge">anvi-interactive</code> is running on a node and not <code class="language-plaintext highlighter-rouge">winogradsky</code>, yet <code class="language-plaintext highlighter-rouge">module</code> still works. SLURM sends your current EVs to the node when running a job. To use this system with <code class="language-plaintext highlighter-rouge">sbatch</code>, just place the <code class="language-plaintext highlighter-rouge">module load</code> command immediately after the <code class="language-plaintext highlighter-rouge">sbatch</code> options in an <code class="language-plaintext highlighter-rouge">sbatch</code> script. For example:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#! /bin/sh</span>
+<span class="c">#SBATCH --output test.output</span>
+
+module load programs/anvio-2.3.2
+anvi-interactive <span class="nt">-v</span>
+</code></pre></div></div>
+
+<h2 id="mkproject">mkproject</h2>
+
+<p>The program <code class="language-plaintext highlighter-rouge">mkproject</code> is a small but flexible BASH program I wrote that mimics <code class="language-plaintext highlighter-rouge">mkdir</code> except it creates an entire project’s structure and generates a module and basic documentation for said project. The rest of this tutorial will focus on <code class="language-plaintext highlighter-rouge">mkproject</code> and will be structured so the reader can follow along line-by-line.</p>
+
+<h3 id="sweet-and-simple">Sweet and Simple</h3>
+
+<p>In it’s simplest form, <code class="language-plaintext highlighter-rouge">mkproject</code> just requires a project name: <code class="language-plaintext highlighter-rouge">mkproject &lt;project name&gt;</code>. This creates a folder for the project, copies all files from the <code class="language-plaintext highlighter-rouge">/etc/mkproject/skel</code>, creates a module using <code class="language-plaintext highlighter-rouge">/etc/mkproject/TEMPLATE.module</code>, and edits the <code class="language-plaintext highlighter-rouge">README.md</code> file copied from <code class="language-plaintext highlighter-rouge">/etc/mkproject/skel</code> to generate semi-custom documentation. We will explore all these functions using the following:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>tutorial        <span class="c"># A temporary directory for this tutorial</span>
+<span class="nb">cd </span>tutorial
+mkproject basic       <span class="c"># Make a project named "basic"</span>
+<span class="nb">ls</span>                    <span class="c"># Note the firectory called "basic"</span>
+<span class="nb">ls </span>basic              <span class="c"># We can now see the structure of the project</span>
+<span class="nb">ls </span>basic/results      <span class="c"># Results has some additional directories</span>
+less basic/README.md  <span class="c"># This markdown file details the structure</span>
+module load basic     <span class="c"># Load the custom module for the project "basic"</span>
+                      <span class="c"># We'll print some EVs for "basic"</span>
+<span class="nb">echo</span> <span class="k">${</span><span class="nv">project</span><span class="k">}</span>       <span class="c"># Points to project directory</span>
+<span class="nb">echo</span> <span class="k">${</span><span class="nv">data</span><span class="k">}</span>          <span class="c"># Points to "data" folder in ${project}</span>
+<span class="nb">echo</span> <span class="k">${</span><span class="nv">results</span><span class="k">}</span>       <span class="c"># Points to "results" folder in ${project}</span>
+<span class="nb">printenv</span> | <span class="nb">grep</span> <span class="nt">-i</span> <span class="nt">-e</span> <span class="s1">'^project'</span>  <span class="c"># These vars are in fact EVs</span>
+module list
+<span class="nb">ls</span> ~/privatemodules   <span class="c"># Where modules are located, we'll open them later</span>
+module unload basic
+</code></pre></div></div>
+
+<p>There is an EV for each folder created automatically by <code class="language-plaintext highlighter-rouge">mkproject</code> as well as a <code class="language-plaintext highlighter-rouge">cpus</code> EV set to two. The project directory structure is derived from a pseudostandard used by many programmers when working on projects. While very few people reading this will be doing such work, the structure is well known and useful for consistency between projects. Since the project structure is detailed in <code class="language-plaintext highlighter-rouge">README.md</code>, I will not do so here.</p>
+
+<p>If you don’t want to strictly use this structure, you don’t have to! In addition to simply editing the folders and module for your project, <code class="language-plaintext highlighter-rouge">mkproject</code> includes several builtin functions for tailoring things to your  style.</p>
+
+<h3 id="mkproject-1">.mkproject</h3>
+
+<p>If you have a directory called <code class="language-plaintext highlighter-rouge">${HOME}/.mkproject</code>, that directory is automatically used in place of <code class="language-plaintext highlighter-rouge">/etc/mkproject</code>. Note that <code class="language-plaintext highlighter-rouge">.mkproject</code> must meet the following requirements:</p>
+
+<ol>
+  <li>It must contain a file called <code class="language-plaintext highlighter-rouge">TEMPLATE.module</code>, this file can be empty.</li>
+  <li>It must contain a directory called <code class="language-plaintext highlighter-rouge">skel</code>, everything under <code class="language-plaintext highlighter-rouge">skel</code> will be copied to your project.</li>
+  <li><code class="language-plaintext highlighter-rouge">skel</code> must have a file called <code class="language-plaintext highlighter-rouge">README.md</code>, this file can be empty.</li>
+</ol>
+
+<p>This features allows you to overwrite the default project structure and module template in case you want your projects to always meet certain criteria. The following block will demonstrate how to make and use <code class="language-plaintext highlighter-rouge">.mkproject</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkproject <span class="nt">-h</span>                   <span class="c"># View the help for mkproject</span>
+<span class="nv">demo</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/.mkproject"</span>      <span class="c"># Hah, BASH variables! We come full circle.</span>
+<span class="nb">mkdir</span> <span class="nt">-p</span> <span class="k">${</span><span class="nv">demo</span><span class="k">}</span>/skel          <span class="c"># -p makes parents along the way</span>
+<span class="nb">touch</span> <span class="k">${</span><span class="nv">demo</span><span class="k">}</span>/TEMPLATE.module  <span class="c"># Required, can be empty</span>
+<span class="nb">touch</span> <span class="k">${</span><span class="nv">demo</span><span class="k">}</span>/skel/README.md   <span class="c"># Required, can be empty</span>
+<span class="nb">mkdir</span> <span class="k">${</span><span class="nv">demo</span><span class="k">}</span>/skel/test        <span class="c"># Example directory</span>
+mkproject config               <span class="c"># Make new project using the config we made</span>
+<span class="nb">ls </span>config
+less config/README.md          <span class="c"># Note it is empty</span>
+module load config             <span class="c"># Note it breaks, let's find out why</span>
+<span class="nb">echo</span> <span class="k">${</span><span class="nv">project</span><span class="k">}</span>  <span class="c"># Empty because we haven't properly configured a template</span>
+<span class="nb">cat</span> ~/privatemodules/config    <span class="c"># Note it is empty, hence we can't load it</span>
+</code></pre></div></div>
+
+<p>The preceeding example is highly minimalistic, you’ll want to make your own module template, README documentation, and add a more robust directory structure if you choose to use <code class="language-plaintext highlighter-rouge">.mkproject</code>. I recommend copying <code class="language-plaintext highlighter-rouge">TEMPALTE.module</code> and <code class="language-plaintext highlighter-rouge">README.md</code> to your <code class="language-plaintext highlighter-rouge">.mkproject</code> and editing from there. Both files have tutorials on hwo to use them in the file and already contain everything you’ll need, you just have to edit them. Let’s do that now:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>less /etc/mkprokect/skell/README.md
+less /etc/mkproject/TEMPLATE.module
+less ~/privatemodules/basic          <span class="c"># Let's look at one we've made</span>
+</code></pre></div></div>
+
+<p>You may need to play around with your these files to get the hang of them, but it’ll be worth your while.</p>
+
+<h3 id="using-the-default">Using the Default</h3>
+
+<p>Even if you make <code class="language-plaintext highlighter-rouge">.mkproject</code> to create a custom project structure, you may still want to use the defaults stucture from <code class="language-plaintext highlighter-rouge">/etc/mkproject</code> on occasion. To do so, simply use the flag <code class="language-plaintext highlighter-rouge">-d</code> when running <code class="language-plaintext highlighter-rouge">mkproject</code>. Let’s try it:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkproject <span class="nt">-d</span> def  <span class="c"># New project using original template, default is reserved</span>
+<span class="nb">ls </span>def            <span class="c"># See how directory structure is the same as "basic"</span>
+less def/README.md
+module load def
+<span class="nb">echo</span> <span class="k">${</span><span class="nv">project</span><span class="k">}</span>
+module unload def
+</code></pre></div></div>
+
+<h3 id="multiple-custom-project-structures">Multiple Custom Project Structures</h3>
+
+<p>While <code class="language-plaintext highlighter-rouge">.mkproject</code> overrides the default project structure to suite your tastes, you may want multiple different structures for different types of projects, e.g. 16S or metagenomics. The <code class="language-plaintext highlighter-rouge">-c</code> options lets you specify any directory you want to be the skeleton for your project, however, it must follow the same rules as <code class="language-plaintext highlighter-rouge">.mkproject</code>. The following examples illustrates how to make custom configurations outside of <code class="language-plaintext highlighter-rouge">.mkproject</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">newconfig</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/.test"</span>          <span class="c"># This will be the custom config</span>
+<span class="nb">mkdir</span> <span class="nt">-p</span> <span class="k">${</span><span class="nv">newconfig</span><span class="k">}</span>/skel
+<span class="nb">touch</span> <span class="k">${</span><span class="nv">newconfig</span><span class="k">}</span>/TEMPLATE.module
+<span class="nb">touch</span> <span class="k">${</span><span class="nv">newconfig</span><span class="k">}</span>/skel/README.md
+<span class="nb">mkdir</span> <span class="k">${</span><span class="nv">newconfig</span><span class="k">}</span>/skel/test2      <span class="c"># Example directory, different from above</span>
+mkproject <span class="nt">-c</span> ~/.test custom        <span class="c"># New project using custom config</span>
+<span class="nb">ls </span>custom
+</code></pre></div></div>
+
+<p>And that’s <code class="language-plaintext highlighter-rouge">mkproject</code>!</p>
+
+<h2 id="final-notes">Final Notes</h2>
+
+<ol>
+  <li>Modules can “stack” as long as they don’t conflict. You could have a module for your project and additional modules for different groups of sample or analyses.</li>
+  <li><code class="language-plaintext highlighter-rouge">module</code> is very flexible, be creative!</li>
+  <li>You can save program versions per project by using the lines of code from the programs modules. Simply copy the lines at the bottom of the file into your project’s module.</li>
+  <li>I may add a “freeze environment” option to <code class="language-plaintext highlighter-rouge">mkproject</code> to automate the preceeding point. No promises.</li>
+  <li>If you make a project with the same name as a previous project, the newer project will not get a module.</li>
+</ol>
+
+<h2 id="cleanup">Cleanup</h2>
+
+<p>Let’s delete all the files and folders we made in this tutorial.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ../
+<span class="nb">rm</span> <span class="nt">-rf</span> tutorial .mkproject .test
+<span class="nb">rm</span> ~/privatemodules/basic ~/privatemodules/def ~/privatemodules/config
+</code></pre></div></div>
+
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+
+
+	</div>
+
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>

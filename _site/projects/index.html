@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Brazelton Lab Data</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+
+  <!-- Customized Bootstrap + Font Awesome + Solarized -->
+  <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbar-brand" href="/">W.J. Brazelton</a>
+<!-- 
+				<a class="navbar-brand" href="/">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/sulis_20180916180909_smaller2_sq.png".svg">
+				</a>
+ -->
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/papers/">publications</a>
+						</li>
+						
+						
+						<li class="nav-link active">
+						
+						<a class="mx-1" href="/projects/">data</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/blog/">blog</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/about/">about</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container mt-4">
+
+	
+
+    <div class="row">
+		<div class="col-md-4 projectbox">
+			<div class="head">
+				<a href="/projects/protocols/" class="off">protocols</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="note">
+				<a href="/projects/protocols/" class="off"></a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="https://github.com/Brazelton-Lab/protocols/commit/6bfd1c1d25ccd2a275f35de31e41316000407514">
+				17 Nov 2021
+				</a>
+				by
+				<a class="off" href="https://github.com/wbrazelton">
+				wbrazelton
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+		</div>
+    
+
+
+    
+		<div class="col-md-4 projectbox">
+			<div class="head">
+				<a href="/projects/McGonigle-2019-LCY/" class="off">McGonigle-2019-LCY</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="note">
+				<a href="/projects/McGonigle-2019-LCY/" class="off">Genomic Evidence for Formate Metabolism by Chloroflexi as the Key to Unlocking Deep Carbon in Lost City Microbial Ecosystems</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="https://github.com/Brazelton-Lab/McGonigle-2019-LCY/commit/47b16f47506dadd166a9d33df99503f839dd134f">
+				16 Nov 2021
+				</a>
+				by
+				<a class="off" href="https://github.com/wbrazelton">
+				wbrazelton
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+		</div>
+    
+
+
+    
+		<div class="col-md-4 projectbox">
+			<div class="head">
+				<a href="/projects/Thornton_2020/" class="off">Thornton_2020</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="note">
+				<a href="/projects/Thornton_2020/" class="off">Scripts and R-code used in Thornton et al., 2020</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="https://github.com/Brazelton-Lab/Thornton_2020/commit/863ebbf35c3ad18402f8a7989139f832af5c4b1f">
+				16 Nov 2021
+				</a>
+				by
+				<a class="off" href="https://github.com/wbrazelton">
+				wbrazelton
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+		</div>
+    </div>
+
+
+    <div class="row">
+		<div class="col-md-4 projectbox">
+			<div class="head">
+				<a href="/projects/bio_utils/" class="off">bio_utils</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="note">
+				<a href="/projects/bio_utils/" class="off">Python package containing modules of commonly used bioinformatic scripts</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="https://github.com/Brazelton-Lab/bio_utils/commit/e284ac2e414a40e116e87ea7333f20244c6de175">
+				16 Nov 2021
+				</a>
+				by
+				<a class="off" href="https://github.com/wbrazelton">
+				wbrazelton
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+		</div>
+    
+
+
+    
+		<div class="col-md-4 projectbox">
+			<div class="head">
+				<a href="/projects/McGonigle-BSF-Metagenome-2021/" class="off">McGonigle-BSF-Metagenome-2021</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="note">
+				<a href="/projects/McGonigle-BSF-Metagenome-2021/" class="off">Supplement for Metabolic Potential of Microbial Communities in the Hypersaline Sediments of the Bonneville Salt Flats</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="https://github.com/Brazelton-Lab/McGonigle-BSF-Metagenome-2021/commit/cf800f6dc09d511e4269fffd11a76af5bff40269">
+				16 Nov 2021
+				</a>
+				by
+				<a class="off" href="https://github.com/wbrazelton">
+				wbrazelton
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+		</div>
+    
+
+
+    
+		<div class="col-md-4 projectbox">
+			<div class="head">
+				<a href="/projects/lab_scripts/" class="off">lab_scripts</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="note">
+				<a href="/projects/lab_scripts/" class="off">Standalone scripts used in the lab's various bioinformatics workflows</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="https://github.com/Brazelton-Lab/lab_scripts/commit/97555f90fff6b71b800f4e6b440788440f8b76ff">
+				18 Jun 2021
+				</a>
+				by
+				<a class="off" href="https://github.com/wbrazelton">
+				wbrazelton
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+		</div>
+    </div>
+
+
+    <div class="row">
+		<div class="col-md-4 projectbox">
+			<div class="head">
+				<a href="/projects/seq-annot/" class="off">seq-annot</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="note">
+				<a href="/projects/seq-annot/" class="off">Tools to facilitate annotation and comparison of genomes and metagenomes</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="https://github.com/Brazelton-Lab/seq-annot/commit/e2f436bbc47718e68332d22fefa616db9f62149f">
+				5 Mar 2021
+				</a>
+				by
+				<a class="off" href="https://github.com/wbrazelton">
+				wbrazelton
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+		</div>
+    
+
+
+    
+		<div class="col-md-4 projectbox">
+			<div class="head">
+				<a href="/projects/Atlantis-Massif-2015/" class="off">Atlantis-Massif-2015</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="note">
+				<a href="/projects/Atlantis-Massif-2015/" class="off">Materials associated with Motamedi et al. (2019)</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="https://github.com/Brazelton-Lab/Atlantis-Massif-2015/commit/c9a8d6580ee8e6591cd1303f4013b7e661f6f436">
+				9 Dec 2019
+				</a>
+				by
+				<a class="off" href="https://github.com/shahrzadmotamedi">
+				shahrzadmotamedi
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+		</div>
+    
+
+
+    
+		<div class="col-md-4 projectbox">
+			<div class="head">
+				<a href="/projects/seq-qc/" class="off">seq-qc</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="note">
+				<a href="/projects/seq-qc/" class="off">Basic tools for preprocessing sequencing reads</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="https://github.com/Brazelton-Lab/seq-qc/commit/5ef0d22eabccfbb71ea99bef4e1eb9b116a2f23d">
+				1 Jul 2019
+				</a>
+				by
+				<a class="off" href="https://github.com/cnthornton">
+				cnthornton
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+		</div>
+    </div>
+
+
+    <div class="row">
+		<div class="col-md-4 projectbox">
+			<div class="head">
+				<a href="/projects/oak/" class="off">oak</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="note">
+				<a href="/projects/oak/" class="off">Ontological Annotation using Kegg</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="https://github.com/Brazelton-Lab/oak/commit/6dabceec0f45c37e5f3291672cd557ed0354c579">
+				4 Nov 2017
+				</a>
+				by
+				<a class="off" href="https://github.com/TheOneHyer">
+				TheOneHyer
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+		</div>
+    
+
+
+    
+		<div class="col-md-4 projectbox">
+			<div class="head">
+				<a href="/projects/Dangerfield-2017/" class="off">Dangerfield-2017</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="note">
+				<a href="/projects/Dangerfield-2017/" class="off">Protocols and software associated with Dangerfield et al. 2017 "Bacterial communities affected by experimental disturbances to canopy soils of a temperate rainforest"</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="https://github.com/Brazelton-Lab/Dangerfield-2017/commit/718ab931d14c355113777088078b43821467452c">
+				14 Jul 2017
+				</a>
+				by
+				<a class="off" href="https://github.com/wbrazelton">
+				wbrazelton
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+		</div>
+    
+
+</div>	
+
+
+	</div>
+
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>

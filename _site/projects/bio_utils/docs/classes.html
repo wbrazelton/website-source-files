@@ -1,0 +1,471 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Classes &mdash; bio_utils 1.3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="bio_utils 1.3.0 documentation" href="index.html"/>
+        <link rel="next" title="Iterators" href="iterators.html"/>
+        <link rel="prev" title="bio_utils: library of common bioinformatic functions" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bio_utils
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#b6entry">B6Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fastaentry">FastaEntry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fastqentry">FastqEntry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gff3entry">GFF3Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#samentry">SamEntry</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="iterators.html">Iterators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="verifiers.html">Verifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="blast_tools.html">Blast Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bio_utils</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Classes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/classes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="classes">
+<h1>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>bio_utils’ offers many classes that house biological data from many different
+file formats. Each instance contains an attribute per field of a given file
+format as well as a <code class="docutils literal"><span class="pre">write()</span></code> method that returns the original entry properly
+formatted and followed by a newline character. Each section below includes a
+simple description of what each format contains and a link to a detailed
+description of said format.</p>
+<p>These classes are currently contained in the iterators subpackage but will
+constitute their own package later, see <a class="reference external" href="roadmap.rst">Roadmap</a> for details.</p>
+</div>
+<div class="section" id="b6entry">
+<span id="id1"></span><h2>B6Entry<a class="headerlink" href="#b6entry" title="Permalink to this headline">¶</a></h2>
+<p>B6 files contain various data detailing the length and quality of an alignment
+between nucleotide or protein sequences. This file format is used by
+<a class="reference external" href="https://www.ncbi.nlm.nih.gov/books/NBK279690/">NCBI BLAST+</a> as output format
+6, hence B6 (Blast+ 6). B6 was referred to as M8 in NCBI BLAST.
+<a class="reference external" href="http://www.drive5.com/usearch/manual/blast6out.html">drive5</a> contains a
+good, succinct description of this format. This class only supports the default
+B6 format and does not accept arbitrary fields.</p>
+<dl class="class">
+<dt id="bio_utils.iterators.B6Entry">
+<em class="property">class </em><code class="descclassname">bio_utils.iterators.</code><code class="descname">B6Entry</code><a class="reference internal" href="_modules/bio_utils/iterators/b6.html#B6Entry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bio_utils.iterators.B6Entry" title="Permalink to this definition">¶</a></dt>
+<dd><p>A simple class to store data from B6/M8 entries and write them</p>
+<dl class="docutils">
+<dt>Attributes:</dt>
+<dd><p class="first">query (str): query ID (sequence aligned with)</p>
+<p>subject (str): subject ID (sequence aligned to)</p>
+<dl class="docutils">
+<dt>perc_identical (float): percent of query and subject sequences that are</dt>
+<dd>identical</dd>
+</dl>
+<p>align_len (int): length of alignment</p>
+<p>mismatches (int): number of mismatches in alignment</p>
+<p>gaps (int): number of gaps in alignment</p>
+<p>query_start (int): alignment start position in query sequence</p>
+<p>query_end (int): alignment end position in query sequence</p>
+<p>subject_start (int): alignment start position in subject sequence</p>
+<p>subject_end (int): alignment end position in subject sequence</p>
+<p>evalue (float): E-value of alignment</p>
+<p class="last">bit_score (float): Bit score of alignment</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="bio_utils.iterators.B6Entry.write">
+<code class="descname">write</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bio_utils/iterators/b6.html#B6Entry.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bio_utils.iterators.B6Entry.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return B6/M8 formatted string</p>
+<dl class="docutils">
+<dt>Returns:</dt>
+<dd>str: B6/M8 formatted string containing entire B6/M8 entry</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="fastaentry">
+<span id="id2"></span><h2>FastaEntry<a class="headerlink" href="#fastaentry" title="Permalink to this headline">¶</a></h2>
+<p>FASTA files contain nucleotide and protein sequences differentiated by unique
+identifiers. <a class="reference external" href="https://en.wikipedia.org/wiki/FASTA_format">Wikipedia</a> provides
+both the history of the FASTA format and format specifications.</p>
+<dl class="class">
+<dt id="bio_utils.iterators.FastaEntry">
+<em class="property">class </em><code class="descclassname">bio_utils.iterators.</code><code class="descname">FastaEntry</code><a class="reference internal" href="_modules/bio_utils/iterators/fasta.html#FastaEntry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bio_utils.iterators.FastaEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>A simple class to store data from FASTA entries and write them</p>
+<dl class="docutils">
+<dt>Attributes:</dt>
+<dd><dl class="first docutils">
+<dt>id (str): FASTA ID (everything between the ‘&gt;’ and the first space</dt>
+<dd>of header line)</dd>
+<dt>description (str): FASTA description (everything after the first</dt>
+<dd>space of the header line)</dd>
+</dl>
+<p class="last">sequence (str): FASTA sequence</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="bio_utils.iterators.FastaEntry.write">
+<code class="descname">write</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bio_utils/iterators/fasta.html#FastaEntry.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bio_utils.iterators.FastaEntry.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return FASTA formatted string</p>
+<dl class="docutils">
+<dt>Returns:</dt>
+<dd>str: FASTA formatted string containing entire FASTA entry</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="fastqentry">
+<span id="id3"></span><h2>FastqEntry<a class="headerlink" href="#fastqentry" title="Permalink to this headline">¶</a></h2>
+<p>FASTQ files contain nucleotide and protein sequences differentiated by unique
+identifiers, like <a class="reference internal" href="#fastaentry"><span class="std std-ref">FASTA</span></a> files. FASTQ files also contain
+quality scores indicating the confidence of each base or residue declaration.
+<a class="reference external" href="https://en.wikipedia.org/wiki/FASTQ_format">Wikipedia</a> provides a
+description of the FASTQ format and the meaning of the various quality scores.</p>
+<dl class="class">
+<dt id="bio_utils.iterators.FastqEntry">
+<em class="property">class </em><code class="descclassname">bio_utils.iterators.</code><code class="descname">FastqEntry</code><a class="reference internal" href="_modules/bio_utils/iterators/fastq.html#FastqEntry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bio_utils.iterators.FastqEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>A simple class to store data from FASTQ entries and write them</p>
+<dl class="docutils">
+<dt>Attributes:</dt>
+<dd><dl class="first docutils">
+<dt>id (str): FASTQ ID (everything between the ‘&#64;’ and the first space</dt>
+<dd>of header line)</dd>
+<dt>description (str): FASTQ description (everything after the first</dt>
+<dd>space of the header line)</dd>
+</dl>
+<p>sequence (str): FASTQ sequence</p>
+<p class="last">quality (str): FASTQ quality csores</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="bio_utils.iterators.FastqEntry.write">
+<code class="descname">write</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bio_utils/iterators/fastq.html#FastqEntry.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bio_utils.iterators.FastqEntry.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return FASTQ formatted string</p>
+<dl class="docutils">
+<dt>Returns:</dt>
+<dd>str: FASTQ formatted string containing entire FASTQ entry</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="gff3entry">
+<span id="id5"></span><h2>GFF3Entry<a class="headerlink" href="#gff3entry" title="Permalink to this headline">¶</a></h2>
+<p>General Feature Format 3 (GFF3) contain various data on the location, type, and
+quality of a nucleotide or protein sequence annotation. As opposed to previous
+versions, GFF3 support an arbitrary number of hierarchical annotation levels.
+<a class="reference external" href="http://gmod.org/wiki/GFF3">GMOD</a> gives a very detailed walkthrough of this
+format.</p>
+<dl class="class">
+<dt id="bio_utils.iterators.GFF3Entry">
+<em class="property">class </em><code class="descclassname">bio_utils.iterators.</code><code class="descname">GFF3Entry</code><a class="reference internal" href="_modules/bio_utils/iterators/gff3.html#GFF3Entry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bio_utils.iterators.GFF3Entry" title="Permalink to this definition">¶</a></dt>
+<dd><p>A simple class to store data from GFF3 entries and write them</p>
+<dl class="docutils">
+<dt>Attributes:</dt>
+<dd><p class="first">seqid (str): ID of sequence annotated</p>
+<p>source (str): what performed annotation</p>
+<p>type (str): type of feature (CDS, rRNA, etc.)</p>
+<p>start (int): start of feature</p>
+<p>end (int): end of feature</p>
+<dl class="docutils">
+<dt>score (float): score/confidence of feature, often a P-value, returns</dt>
+<dd>str “.” if no score given</dd>
+</dl>
+<p>strand (str): [+, -, .] strand that feature is located on</p>
+<dl class="last docutils">
+<dt>phase (int): int if phase given in file, else str. Required for</dt>
+<dd>features of type “CDS,” indicates bases until next codon in feature</dd>
+<dt>attributes (dict): OrderedDict if prase_attr is True, else str. Various</dt>
+<dd><p class="first">attributes formatted as “&lt;tag&gt;=&lt;value&gt;” with multiple attributes
+separated by semicolons. If parse_attr true, creates dict where
+tags are keys and values are values as follows (in YAML format):</p>
+<p>Original String: tag1=value1;tag2=value2</p>
+<p class="last">{
+tag1: value1,
+tag2: value2
+}</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="method">
+<dt id="bio_utils.iterators.GFF3Entry.write">
+<code class="descname">write</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bio_utils/iterators/gff3.html#GFF3Entry.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bio_utils.iterators.GFF3Entry.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return GFF3 formatted string</p>
+<dl class="docutils">
+<dt>Returns:</dt>
+<dd>str: GFF3 formatted string containing entire GFF3 entry</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="samentry">
+<span id="id6"></span><h2>SamEntry<a class="headerlink" href="#samentry" title="Permalink to this headline">¶</a></h2>
+<p>Sequence Alignment/Map (SAM) files contains details on the location and quality
+of an alignment. Many alignment programs produced SAM files as their default
+output. <a class="reference external" href="https://samtools.github.io/hts-specs/SAMv1.pdf">GitHub</a> host a
+painfully detailed description of the SAM file format.</p>
+<dl class="class">
+<dt id="bio_utils.iterators.SamEntry">
+<em class="property">class </em><code class="descclassname">bio_utils.iterators.</code><code class="descname">SamEntry</code><a class="reference internal" href="_modules/bio_utils/iterators/sam.html#SamEntry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bio_utils.iterators.SamEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>A simple class to store data from SAM entries and write them</p>
+<dl class="docutils">
+<dt>Attributes:</dt>
+<dd><p class="first">qname (str): Name of query sequence</p>
+<dl class="docutils">
+<dt>flag (int): Int if integer in file, str if hex given in file,</dt>
+<dd>str if flag not given. Gives various info about read
+alignment, see
+<a class="reference external" href="https://samtools.github.io/hts-specs/SAMv1.pdf">https://samtools.github.io/hts-specs/SAMv1.pdf</a>
+for more info.</dd>
+</dl>
+<p>rname (str): Name of reference sequence or sequence aligned to</p>
+<dl class="docutils">
+<dt>pos (int): first base of alignment relative to reference,</dt>
+<dd>0 = no alignment</dd>
+</dl>
+<p>mapq (int): mapping quality of alignment</p>
+<p>cigar (str): CIGAR string detailing alignment</p>
+<p>rnext (str): name of paired read</p>
+<p>pnext (int): position of paired read, 0 = no alignment</p>
+<p>tlen (int): length of alignments of all paired reads</p>
+<p>seq (str): sequence of query sequence, * if no sequence</p>
+<p class="last">qual (str): quality scores of query sequence, * if no scores</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="bio_utils.iterators.SamEntry.write">
+<code class="descname">write</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bio_utils/iterators/sam.html#SamEntry.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bio_utils.iterators.SamEntry.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return SAM formatted string</p>
+<dl class="docutils">
+<dt>Returns:</dt>
+<dd>str: SAM formatted string containing entire SAM entry</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="iterators.html" class="btn btn-neutral float-right" title="Iterators" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="bio_utils: library of common bioinformatic functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, William Brazelton, Alex Hyer.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.3.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

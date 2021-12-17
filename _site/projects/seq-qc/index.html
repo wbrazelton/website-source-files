@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>seq-qc/</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+
+  <!-- Customized Bootstrap + Font Awesome + Solarized -->
+  <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbar-brand" href="/">W.J. Brazelton</a>
+<!-- 
+				<a class="navbar-brand" href="/">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/sulis_20180916180909_smaller2_sq.png".svg">
+				</a>
+ -->
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/papers/">publications</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/projects/">data</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/blog/">blog</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/about/">about</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container mt-4">
+
+	
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="bigtitle titlebox">
+      <nav aria-label="breadcrumb">
+  			<ol class="breadcrumb">
+  			
+  			
+  				
+  				
+  				
+  				<li class="breadcrumb-item active">
+            seq-qc
+          </li>
+  				
+  			
+  			</ol>
+      </nav>
+    </div>
+		<p>
+		<div class="head">
+			Basic tools for preprocessing sequencing reads
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Source code
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-cog fa-fw"></i>
+			<a class="off" href="https://github.com/Brazelton-Lab/seq-qc">github.com/Brazelton-Lab/<wbr>seq-qc</a>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Contributors
+		</div>
+		<div class="pad-left note">
+			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/cnthornton">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/6643118?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				cnthornton
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/TheOneHyer">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/8741979?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				TheOneHyer
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Latest commits
+		</div>
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/seq-qc/commit/5ef0d22eabccfbb71ea99bef4e1eb9b116a2f23d">
+					01 Jul 2019 - <span class="text-gray">Update readme</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/seq-qc/commit/d138131e7e80bdc8237225b3f2bcf937e9d94d2f">
+					13 Jan 2018 - <span class="text-gray">increment version</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/seq-qc/commit/be14ab6b6c01e940d3cc83c98ae57af0b3092ea0">
+					13 Jan 2018 - <span class="text-gray">set limit on write queue size</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/seq-qc/commit/874e9c1c135523ddb2cc7acbf53c537f711b21c3">
+					18 Dec 2017 - <span class="text-gray">version update</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/seq-qc/commit/0c7f182fc3bc31ea270139844e82b44828627bee">
+					18 Dec 2017 - <span class="text-gray">correctly format mean, median, and sd output statistics as float</span>
+					</a>
+				</li>
+			
+			</ul>
+		</div>
+		<div class="spacer"></div>
+
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+			<!-- 16 -->
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+		<div class="smallhead">
+			Pages
+		</div>
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+				<div class="smallspacer"></div>
+				<li>
+					<a class="off" href="/projects/seq-qc/">
+					<i class="fa fa-folder-open-o"></i>  / 
+					</a>
+				</li>
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+		</div>
+		<div class="spacer"></div>
+		
+
+	</div>
+	<div class="col-lg-8">
+		<div class="post">
+			<p>
+			<h1 id="seq-qc---python-package-with-modules-for-preprocessing-sequencing-reads">seq-qc - Python package with modules for preprocessing sequencing reads</h1>
+
+<h2 id="about">About</h2>
+
+<p>seq-qc is a python package for performing various quality control tasks on 
+sequencing reads. Currently, seq-qc has three programs for this - a 
+dereplicator of paired-end reads, a tool for performing quality-based
+trimming, and a demultiplexer that uses the barcodes in sequence headers to
+partition sequences.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>Python 3.4+</p>
+
+<p>Python Libraries:</p>
+
+<ul>
+  <li>arandomness</li>
+  <li>bio_utils</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>pip install seq-qc</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>filter_replicates takes as input fastq or fasta files. Paired reads can either 
+be split in separate files or can be in a single, interleaved file. 
+filter_replicates currently supports searching for exact, 5’-prefix, and 
+reverse-complement replicates.</p>
+
+<h3 id="examples">Examples</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>filter_replicates --prefix --rev-comp --reverse input_reverse.fastq \
+    input_forward.fastq
+
+filter_replicates --prefix --rev-comp -o output_forward.fastq.gz -v \
+    output_reverse.fastq.gz --reverse input_reverse.fastq.gz \
+    input_forward.fastq.gz
+
+filter_replicates --interleaved -o output_interleaved.fasta \
+    --format fasta --log output.log input_interleaved.fasta
+
+filter_replicates -o output_singles.fastq input_singles.fastq
+</code></pre></div></div>
+
+<p>qtrim takes only fastq files as input. It can perform a variety of trimming 
+steps - including trimming low quality bases from the start and end of a 
+read, trimming the read after the position of the first ambiguous base, and
+trimming a read using a sliding-window approach. It also supports cutting the 
+read to a desired length by removing bases from the start or end of the read.</p>
+
+<h3 id="examples-1">Examples</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qtrim -1 -o \
+output_forward.fastq.gz --qual-type phred33 --sliding-window 10:20 -v \
+    out_reverse.fastq.gz -s out_singles.fastq.gz --reverse \
+    in_reverse.fastq.gz in_forward.fastq.gz
+
+qtrim --threads 4 --interleaved --leading 20 --trailing 20 --trunc-n \
+    --min-len 60 -o out_interleaved.fastq in_interleaved.fastq
+</code></pre></div></div>
+
+<p>demultiplex_headers will split sequences into separate files by the barcode 
+sequence found in the sequence headers. Headers must use the Casava 1.8 format
+for demultiplexing to work. An optional barcodes file can be provided that maps
+desired output filenames to the barcodes expected in the input Fastq/a file.
+See demultiplex_headers –help for formatting requirements.</p>
+
+<h3 id="examples-2">Examples</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>demultiplex_headers --barcodes barcode_map.tsv --distance 2 --hist \
+    barcodes.hist --reverse in_reverse.fastq.gz input_forward.fastq.gz
+
+demultiplex_headers --bzip2 --interleaved input_interleaved.fastq.gz
+</code></pre></div></div>
+
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+
+
+	</div>
+
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+include LICENSE README.md
+recursive-include oak *
+recursive-include oak/bin *
+recursive-include oak/lib *

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>bio_utils/</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+
+  <!-- Customized Bootstrap + Font Awesome + Solarized -->
+  <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbar-brand" href="/">W.J. Brazelton</a>
+<!-- 
+				<a class="navbar-brand" href="/">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/sulis_20180916180909_smaller2_sq.png".svg">
+				</a>
+ -->
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/papers/">publications</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/projects/">data</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/blog/">blog</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/about/">about</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container mt-4">
+
+	
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="bigtitle titlebox">
+      <nav aria-label="breadcrumb">
+  			<ol class="breadcrumb">
+  			
+  			
+  				
+  				
+  				
+  				<li class="breadcrumb-item active">
+            bio_utils
+          </li>
+  				
+  			
+  			</ol>
+      </nav>
+    </div>
+		<p>
+		<div class="head">
+			Python package containing modules of commonly used bioinformatic scripts
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Source code
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-cog fa-fw"></i>
+			<a class="off" href="https://github.com/Brazelton-Lab/bio_utils">github.com/Brazelton-Lab/<wbr>bio_<wbr>utils</a>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Contributors
+		</div>
+		<div class="pad-left note">
+			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/TheOneHyer">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/8741979?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				TheOneHyer
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/cnthornton">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/6643118?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				cnthornton
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/wbrazelton">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/9274665?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				wbrazelton
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Latest commits
+		</div>
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/bio_utils/commit/e284ac2e414a40e116e87ea7333f20244c6de175">
+					16 Nov 2021 - <span class="text-gray">Rename README.rst to README.md</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/bio_utils/commit/45897cf69cb81fc1d55f69593e82f3b96d98f9e3">
+					30 Aug 2020 - <span class="text-gray">Still Learning Like a Noob</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/bio_utils/commit/4c622a571ae9476f2702bc481c6f90fcd8026a7a">
+					30 Aug 2020 - <span class="text-gray">Fixed Pythong3 and Download Links</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/bio_utils/commit/67e3502aa39b1a68461c89bd2da2ac992abf326c">
+					30 Aug 2020 - <span class="text-gray">Fixed download URL</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/bio_utils/commit/4e9dbb7bdc35a525dd40eb9301cd77f74170d171">
+					30 Aug 2020 - <span class="text-gray">Changed shebang to python3
+
+All shebang lines now explicitly call for Python 3. Several
+unit tests had to be disabled due to earlier changes to B6Reader.</span>
+					</a>
+				</li>
+			
+			</ul>
+		</div>
+		<div class="spacer"></div>
+
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+			<!-- 11 -->
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+		<div class="smallhead">
+			Pages
+		</div>
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+				<div class="smallspacer"></div>
+				<li>
+					<a class="off" href="/projects/bio_utils/">
+					<i class="fa fa-folder-open-o"></i>  / 
+					</a>
+				</li>
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+		</div>
+		<div class="spacer"></div>
+		
+
+	</div>
+	<div class="col-lg-8">
+		<div class="post">
+			<p>
+			<p>=========
+bio_utils
+=========</p>
+
+<p>.. image:: logo/bio_utils_logo_120.png</p>
+
+<h1 id="summary">Summary</h1>
+
+<p>bio_utils is a library of Python modules performing routine functions in
+bioinformatic scripts.</p>
+
+<h1 id="installation">Installation</h1>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install bio_utils
+</code></pre></div></div>
+
+<h1 id="documentation">Documentation</h1>
+
+<p>bio_utils documentation is hosted at
+<code class="language-plaintext highlighter-rouge">Read the Docs &lt;http://bio-utils.readthedocs.io/en/latest/&gt;</code><em>. A copy of this
+documentation is included in <code class="language-plaintext highlighter-rouge">docs &lt;docs&gt;</code></em>.</p>
+
+<h1 id="copyright">Copyright</h1>
+
+<p>bio_utils operates under <code class="language-plaintext highlighter-rouge">GPLv3 &lt;LICENSE&gt;</code>_ and may be shared, modified, and
+redistributed as per that license.</p>
+
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+
+
+	</div>
+
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>seq-annot/</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+
+  <!-- Customized Bootstrap + Font Awesome + Solarized -->
+  <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbar-brand" href="/">W.J. Brazelton</a>
+<!-- 
+				<a class="navbar-brand" href="/">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/sulis_20180916180909_smaller2_sq.png".svg">
+				</a>
+ -->
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/papers/">publications</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/projects/">data</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/blog/">blog</a>
+						</li>
+						
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/about/">about</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container mt-4">
+
+	
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="bigtitle titlebox">
+      <nav aria-label="breadcrumb">
+  			<ol class="breadcrumb">
+  			
+  			
+  				
+  				
+  				
+  				<li class="breadcrumb-item active">
+            seq-annot
+          </li>
+  				
+  			
+  			</ol>
+      </nav>
+    </div>
+		<p>
+		<div class="head">
+			Tools to facilitate annotation and comparison of genomes and metagenomes
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Source code
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-cog fa-fw"></i>
+			<a class="off" href="https://github.com/Brazelton-Lab/seq-annot">github.com/Brazelton-Lab/<wbr>seq-annot</a>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Contributors
+		</div>
+		<div class="pad-left note">
+			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/cnthornton">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/6643118?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				cnthornton
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/wbrazelton">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/9274665?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				wbrazelton
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Latest commits
+		</div>
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/seq-annot/commit/e2f436bbc47718e68332d22fefa616db9f62149f">
+					05 Mar 2021 - <span class="text-gray">fixed compute_effective_length typo</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/seq-annot/commit/56492d68b7631bc3f7ca5d22cbe1635ad17eee7f">
+					14 Jun 2020 - <span class="text-gray">Use correct argument name</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/seq-annot/commit/a2eb0e4970b6fd0f64c559363b9e9e15099b62cf">
+					14 Jun 2020 - <span class="text-gray">Replace repetitive database loader with load_dbs function from the db module</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/seq-annot/commit/8c7efb10b5fe4688fab0bc2f0c419c42b144052e">
+					14 Jun 2020 - <span class="text-gray">Improve readability by adding more comments</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/Brazelton-Lab/seq-annot/commit/77fe3c6703cefcbe4615a3a1f59315d9fe3a1fcf">
+					05 Jun 2020 - <span class="text-gray">Merge conflicts</span>
+					</a>
+				</li>
+			
+			</ul>
+		</div>
+		<div class="spacer"></div>
+
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+			<!-- 18 -->
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+		<div class="smallhead">
+			Pages
+		</div>
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+				<div class="smallspacer"></div>
+				<li>
+					<a class="off" href="/projects/seq-annot/">
+					<i class="fa fa-folder-open-o"></i>  / 
+					</a>
+				</li>
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+		</div>
+		<div class="spacer"></div>
+		
+
+	</div>
+	<div class="col-lg-8">
+		<div class="post">
+			<p>
+			<h1 id="seq-annot">seq-annot</h1>
+<p>Tools to facilitate annotation and comparison of genomes and metagenomes</p>
+
+<h2 id="about">About</h2>
+
+<p>seq-annot is a python package for annotating and counting genomic features 
+in genomes and metagenomes.</p>
+
+<h2 id="licence">Licence</h2>
+
+<p>seq-annot is under <a href="https://opensource.org/licenses/GPL-3.0">open source licence GPLv3</a></p>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>Python 3.4+</p>
+
+<p>Python Libraries:</p>
+
+<ul>
+  <li>arandomness</li>
+  <li>bio_utils</li>
+  <li>HTSeq</li>
+  <li>numpy</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>pip install seq-annot</p>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="reldb">reldb</h3>
+<p>Integral to the annotation process is a sequence database with high-quality 
+supporting information. seq-annot will accept supporting data in the form of a 
+JSON-formatted relational database that provides context for entries in the 
+sequence database, such as function, alternative IDs, organism, etc. Database 
+entries can contain any number of fields. reldb is a tool used to perform 
+various manipulations on one or more relational databases, including: entry 
+merging, database subsetting, and format conversion.</p>
+
+<h4 id="examples">Examples</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Find all entries with istA in the product description and output results as \
+a tabular CSV:
+    reldb --csv --case -s "product:istA" in.mapping
+
+Merge entries by value of the field 'gene':
+    reldb -m gene in.mapping
+</code></pre></div></div>
+
+<h3 id="screen_features">screen_features</h3>
+<p>screen_features is for screening the results of a homology search using 
+alternative phenotype-conferring snps, bitscore thresholds, and other scoring 
+metrics.</p>
+
+<h4 id="examples-1">Examples</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Filter hits by bitscore threshold specified in the relational database:
+    screen_features -m in.mapping -b bitscore in.b6
+</code></pre></div></div>
+
+<h3 id="annotate_features">annotate_features</h3>
+<p>annotate_features is for annotating a GFF3 file of putative protein-coding 
+genes using the results of a homology search to a database of genes with known 
+or predicted function.</p>
+
+<h4 id="examples-2">Examples</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Annotate predicted protein-coding genes, adding fields Dbxref and gene 
+from the relational database as additional attributes:
+    annotate_features -m mapping.json -f Dbxref,gene -b in.b6 in.gff
+</code></pre></div></div>
+
+<h3 id="combine_features">combine_features</h3>
+<p>combine_features is for combining GFF3 files containing feature annotations. 
+Overlap conflicts can be resolved through a hierarchy of precedence determined 
+by file input order.</p>
+
+<h4 id="examples-3">Examples</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Merge two GFF3 files, using input file order to resolving overlap conflicts
+but allowing overlaps if found on different strands:
+    combine_features --precedence --stranded in.gff1 in.gff2
+</code></pre></div></div>
+
+<h3 id="count_features">count_features</h3>
+<p>count_features is for estimating the abundance of genomic features using a 
+GFF3 file of feature annotations and an read alignment file in SAM/BAM format.</p>
+
+<h4 id="examples-4">Examples</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Estimate abundance for features in GFF in units of FPKM:
+    count_features --nonunique -u fpkm in.bam in.gff
+</code></pre></div></div>
+
+<h3 id="compare_features">compare_features</h3>
+<p>compare_features is for comparing annotated features across multiple samples.</p>
+
+<h4 id="examples-5">Examples</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create table of feature abundances by sample:
+    compare_features -n sample1,sample2 in.csv1 in.csv2
+</code></pre></div></div>
+
+<h3 id="colocate_features">colocate_features</h3>
+<p>colocate_features is for finding evidence of co-residence between two sets of 
+genomic features in an assembly of mixed populations (such as a metagenome 
+assembly).</p>
+
+<h4 id="examples-6">Examples</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Find all instances of co-residence between sets of features:
+    colocate_features -a Alias -f in.fasta in.sets in.gff
+</code></pre></div></div>
+
+
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+
+
+	</div>
+
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>

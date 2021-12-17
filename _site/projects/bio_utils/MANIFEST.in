@@ -1,0 +1,2 @@
+recursive-include Documentation *.md *.rst
+include logo/*
