@@ -6,12 +6,10 @@ categories:
   - research
 ---
 
-<div class="float-none">
 <figure class="figure">
   <img src="/images/BSF_sample_800.png" class="figure-img img-fluid rounded" alt="BSF">
-  <figcaption class="figure-caption" style="width: 800px">Surface salt crust of the Bonneville Salt Flats. Faint pink colors are from halophilic, photosynthetic archaea. Photo credit: Emily Dart</figcaption>
+  <figcaption class="figure-caption">Surface salt crust of the Bonneville Salt Flats. Faint pink colors are from halophilic, photosynthetic archaea. Photo credit: Emily Dart</figcaption>
 </figure>
-</div> 
 
 ## Bonneville Salt Flats
 
@@ -20,17 +18,17 @@ categories:
   <img src="/images/BSF_sampling_441.png" class="figure-img img-fluid rounded" alt="BSF">
   <figcaption class="figure-caption" style="width: 440px">Collecting samples for microbiology research. Photo credit: Emily Dart</figcaption>
 </figure>
-</div> 
+</div>
 
-The Bonneville Salt Flats of Utah are famous for their other-worldly appearance and as a site where numerous vehicle land speed records have been set. 
-Despite the sterile appearance of the salt flats, they host remarkably robust microbial communities that are visibly evident just below the top layer of crust. 
+The Bonneville Salt Flats of Utah are famous for their other-worldly appearance and as a site where numerous vehicle land speed records have been set.
+Despite the sterile appearance of the salt flats, they host remarkably robust microbial communities that are visibly evident just below the top layer of crust.
 
-Evaporite deposits such as the Bonneville Salt Flats are useful analogs for investigating the potential for ancient and modern life in saline conditions of extraterrestrial settings, including on Mars. 
-Jezero Crater, the landing site for the Mars Perseverance Rover, contains sedimentary deposits expected to be the remnants of an ancient, now desiccated lake. 
-Similarly, the Bonneville Salt Flats are the remnants of Lake Bonneville, the largest lake in western North America before it began to desiccate ~15,000 years ago. 
+Evaporite deposits such as the Bonneville Salt Flats are useful analogs for investigating the potential for ancient and modern life in saline conditions of extraterrestrial settings, including on Mars.
+Jezero Crater, the landing site for the Mars Perseverance Rover, contains sedimentary deposits expected to be the remnants of an ancient, now desiccated lake.
+Similarly, the Bonneville Salt Flats are the remnants of Lake Bonneville, the largest lake in western North America before it began to desiccate ~15,000 years ago.
 
 Recent research at the Bonneville Salt Flats has been led by [Brenda Bowen](https://environment.utah.edu/brenda-bowen/).
-This research has been highly interdisciplinary, including geology, microbiology, and sociology. 
+This research has been highly interdisciplinary, including geology, microbiology, and sociology.
 
 A scientist-artist collaboration by Brenda Bowen and Wendy Wischer produced this [art exhibition about the Bonneville Salt Flats.](https://www.granaryarts.org/wendy-wischer-brenda-bowen-evaporated-explorations-in-art-science-and-salt)
 
@@ -41,7 +39,7 @@ You can follow science-oriented [updates about the Bonneville Salt Flats on Twit
   <img src="/images/BSF_core_441.png" class="figure-img img-fluid rounded" alt="BSF">
   <figcaption class="figure-caption" style="width: 440px">Core of the salt crust, revealing multiple colored layers produced by microbial communities. Photo credit: Emily Dart</figcaption>
 </figure>
-</div> 
+</div>
 
 ## Publications and data
 The Brazelton lab has led the microbiological studies of the Bonneville Salt Flats, which have produced the following publications so far:

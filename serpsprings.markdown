@@ -6,23 +6,21 @@ categories:
   - research
 ---
 
-<div class="float-none">
 <figure class="figure">
   <img src="/images/P8253893_800.png" class="figure-img img-fluid rounded" alt="Voltri Massif">
-  <figcaption class="figure-caption" style="width: 800px">Serpentinite springs of the Voltri Massif, Italy. Photo credit: W.J. Brazelton</figcaption>
+  <figcaption class="figure-caption">Serpentinite springs of the Voltri Massif, Italy. Photo credit: W.J. Brazelton</figcaption>
 </figure>
-</div>
 
 ## Serpentinization on Land
 Serpentinization is the geochemical alteration of rocks that were originally formed in Earth's mantle. When these mantle rocks are uplifted into the seafloor, hydrothermal systems, like [the Lost City hydrothermal field](/lostcity), can be formed. When these mantle rocks are uplifted into continental crust (typically after they had been on the seafloor for millions of years), then products of serpentinization can be seen on land.
 
 A review on the differences between serpentinization on land and in the sea, [by Schrenk, Brazelton, and Lang. (2013).](/papers/Schrenk-Rev-in-Mineral-Geochem/)
 
-We study serpentinization on land with two primary research strategies: 
-1. Drilling into the rocks where serpentinization is occurring (or occurred in the past). Two examples are [the Coast Range Ophiolite Microbial Observatory (CROMO)](https://www.colorado.edu/lab/rockpoweredlife/research/theme-i-field-investigations/coast-range-ophiolite-microbiological-observatory) and the [Oman Drilling Project](https://www.omandrilling.ac.uk/). 
+We study serpentinization on land with two primary research strategies:
+1. Drilling into the rocks where serpentinization is occurring (or occurred in the past). Two examples are [the Coast Range Ophiolite Microbial Observatory (CROMO)](https://www.colorado.edu/lab/rockpoweredlife/research/theme-i-field-investigations/coast-range-ophiolite-microbiological-observatory) and the [Oman Drilling Project](https://www.omandrilling.ac.uk/).
 2. Exploring natural springs where the products of serpentinization are transported to the surface by groundwater. Two examples are the Tablelands and the Voltri Massif (see below).
 
-Note that these are also the two basic strategies we have in the ocean: [seafloor drilling projects](/atlantismassif/) and sampling natural seafloor springs like [the Lost City chimneys](/lostcity/). 
+Note that these are also the two basic strategies we have in the ocean: [seafloor drilling projects](/atlantismassif/) and sampling natural seafloor springs like [the Lost City chimneys](/lostcity/).
 
 ## CROMO
 
@@ -35,9 +33,9 @@ Note that these are also the two basic strategies we have in the ocean: [seafloo
 
 The Coast Range Ophiolite Microbial Observatory (CROMO) was established in 2011 with funds provided by the NASA Astrobiology Institute. Eight new boreholes were drilled with ultra-clean methods, including the use of purified water as the only drilling lubricant. Groundwater sampled from the boreholes has an extremely high pH (>12) and contains hydrogen and methane gas, signatures of serpentinization.
 
-Research at CROMO has been led by [Dawn Cardace](https://web.uri.edu/geo/dawn-cardace/), [Tori Hoehler](https://www.nasa.gov/content/tori-hoehler), [Tom McCollom](https://www.colorado.edu/lab/rockpoweredlife/tom-mccollom), and [Matt Schrenk](https://ees.natsci.msu.edu/people/faculty/schrenk-matt/) as the Principle Investigators and has involved many students and postdoctoral researchers. 
+Research at CROMO has been led by [Dawn Cardace](https://web.uri.edu/geo/dawn-cardace/), [Tori Hoehler](https://www.nasa.gov/content/tori-hoehler), [Tom McCollom](https://www.colorado.edu/lab/rockpoweredlife/tom-mccollom), and [Matt Schrenk](https://ees.natsci.msu.edu/people/faculty/schrenk-matt/) as the Principle Investigators and has involved many students and postdoctoral researchers.
 
-The Brazelton and Schrenk labs have collaborated on the microbiological and metagenomic studies at CROMO: 
+The Brazelton and Schrenk labs have collaborated on the microbiological and metagenomic studies at CROMO:
 1. The first publication on the microbial diversity of CROMO groundwater, [by Katrina Twing et al. (2017).](/papers/Twing-Front.-Microbiol)
 2. Gene expression and metabolic activity in CROMO groundwater, [by Melitza Crespo Medina et al., (2017).](/papers/Crespo-Medina-Front.-Microbiol)
 3. Metabolic pathways for carbon assimilation in CROMO groundwater, [by Lauren Seyler et al., (2020).](/papers/Seyler-mSystems/)
@@ -55,7 +53,7 @@ The Brazelton and Schrenk labs have collaborated on the microbiological and meta
 </div>
 
 Natural serpentinite springs can be seen at the Tablelands Ophiolite in Gros Morne National Park, Newfoundland, Canada. Ultramafic rocks of the Tablelands Ophiolite (also known as the Bay of Islands Ophiolite) were uplifted from the Iapetus Ocean and obducted onto the continental margin of Laurentia approximately 485 million years ago.
-Serpentinization remains evident today in the form of highly reducing, ultrabasic springs with extremely high pH (>12.5). 
+Serpentinization remains evident today in the form of highly reducing, ultrabasic springs with extremely high pH (>12.5).
 
 Research at the Tablelands has been led by [Penny Morrill at the Memorial University of Newfoundland.](https://www.esd.mun.ca/wordpress/deltasresearch/)
 
@@ -102,5 +100,3 @@ We showed that the pH 12 springs of the Voltri Massif are transporting distinct 
 Publication: [Brazelton et al. (2017) PeerJ](/papers/Brazelton-PeerJ/)
 
 Associated Data: [GitHub Repo](https://github.com/Brazelton-Lab/Brazelton-2017-PeerJ)
- 
-
