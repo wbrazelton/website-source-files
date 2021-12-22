@@ -9,7 +9,7 @@ ref: Motamedi et al. 2020 Appl Environ Microbiol
 journal: >-
     Applied and Environmental Microbiology
 pdf: /pdfs/papers/Motamedi et al. - 2020 - Microbial Residents of the Atlantis Massif’s Shall.pdf
-supplement: 
+supplement: https://github.com/Brazelton-Lab/Atlantis-Massif-2015
 doi: 10.1128/AEM.00356-20
 ---
 

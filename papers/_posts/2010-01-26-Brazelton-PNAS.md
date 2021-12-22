@@ -9,7 +9,7 @@ ref: Brazelton et al. 2010 PNAS
 journal: >-
     Proceedings of the National Academy of Sciences
 pdf: /pdfs/papers/Brazelton et al. - 2010 - Archaea and bacteria with surprising microdiversit.pdf
-supplement: 
+supplement: /pdfs/supplements/Brazelton et al. - 2010 - Archaea and bacteria with surprising microdiversit.pdf
 doi: 10.1073/pnas.0905369107
 ---
 

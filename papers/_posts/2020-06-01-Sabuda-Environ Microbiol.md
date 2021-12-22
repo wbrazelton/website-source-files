@@ -9,7 +9,7 @@ ref: Sabuda et al. 2020 Environ Microbiol
 journal: >-
     Environmental Microbiology
 pdf: /pdfs/papers/Sabuda et al. - 2020 - A dynamic microbial sulfur cycle in a serpentinizi.pdf
-supplement: 
+supplement: /pdfs/supplements/Sabuda et al. - 2020 - A dynamic microbial sulfur cycle in a serpentinizi.pdf
 doi: 10.1111/1462-2920.15006
 ---
 

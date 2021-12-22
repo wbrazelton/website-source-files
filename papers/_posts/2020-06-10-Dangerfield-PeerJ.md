@@ -9,7 +9,7 @@ ref: Dangerfield et al. 2020 PeerJ
 journal: >-
     PeerJ
 pdf: /pdfs/papers/Dangerfield et al. - 2020 - Succession of bacterial communities on carrion is .pdf
-supplement: 
+supplement: https://github.com/Brazelton-Lab/Dangerfield-2020-PeerJ
 doi: 10.7717/peerj.9307
 ---
 

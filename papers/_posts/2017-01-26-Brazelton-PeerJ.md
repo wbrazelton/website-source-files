@@ -9,7 +9,7 @@ ref: Brazelton et al. 2017 PeerJ
 journal: >-
     PeerJ
 pdf: /pdfs/papers/Brazelton et al. - 2017 - Metagenomic identification of active methanogens a.pdf
-supplement: 
+supplement: https://github.com/Brazelton-Lab/Brazelton-2017-PeerJ
 doi: 10.7717/peerj.2945
 ---
 

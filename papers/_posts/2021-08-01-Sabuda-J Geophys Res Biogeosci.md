@@ -9,7 +9,7 @@ ref: Sabuda et al. 2021 J Geophys Res Biogeosci
 journal: >-
     Journal of Geophysical Research: Biogeosciences
 pdf: /pdfs/papers/Sabuda et al. - 2021 - Biogeochemical Gradients in a Serpentinization‐Inf.pdf
-supplement: 
+supplement: /pdfs/supplements/Sabuda et al. - 2021 - Biogeochemical Gradients in a Serpentinization‐Inf.pdf
 doi: 10.1029/2020JG006209
 ---
 

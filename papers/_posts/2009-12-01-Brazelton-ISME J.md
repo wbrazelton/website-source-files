@@ -9,7 +9,7 @@ ref: Brazelton et al. 2009 ISME J
 journal: >-
     The ISME Journal
 pdf: /pdfs/papers/Brazelton and Baross - 2009 - Abundant transposases encoded by the metagenome of.pdf
-supplement: 
+supplement: /pdfs/supplements/Brazelton and Baross - 2009 - Abundant transposases encoded by the metagenome of.pdf
 doi: 10.1038/ismej.2009.79
 ---
 

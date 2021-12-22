@@ -9,7 +9,7 @@ ref: Brazelton et al. 2011 mBio
 journal: >-
     mBio
 pdf: /pdfs/papers/Brazelton et al. - 2011 - Physiological Differentiation within a Single-Spec.pdf
-supplement: 
+supplement: /pdfs/supplements/Brazelton et al. - 2011 - Physiological Differentiation within a Single-Spec.pdf
 doi: 10.1128/mBio.00127-11
 ---
 

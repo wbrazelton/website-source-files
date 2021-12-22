@@ -86,7 +86,9 @@ for index, row in df.iterrows():
 		o.write(pdf)
 		o.write('\n')
 		
-		o.write('supplement: \n')
+		o.write('supplement: /pdfs/supplements/')
+		o.write(pdf)
+		o.write('\n')
 		
 		o.write('doi: ')
 		o.write(doi)

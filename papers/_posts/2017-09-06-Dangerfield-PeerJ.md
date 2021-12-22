@@ -9,7 +9,7 @@ ref: Dangerfield et al. 2017 PeerJ
 journal: >-
     PeerJ
 pdf: /pdfs/papers/Dangerfield et al. - 2017 - Canopy soil bacterial communities altered by sever.pdf
-supplement: 
+supplement: https://github.com/Brazelton-Lab/Dangerfield-2017
 doi: 10.7717/peerj.3773
 ---
 

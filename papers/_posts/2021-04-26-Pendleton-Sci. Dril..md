@@ -9,7 +9,7 @@ ref: Pendleton et al. 2021 Sci. Dril.
 journal: >-
     Scientific Drilling
 pdf: /pdfs/papers/Pendleton et al. - 2021 - Potential microbial contamination from drilling lu2.pdf
-supplement: 
+supplement: https://github.com/Brazelton-Lab/Pendleton-2021-Sci-Drill
 doi: 10.5194/sd-29-49-2021
 ---
 

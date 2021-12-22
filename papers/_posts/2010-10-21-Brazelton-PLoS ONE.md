@@ -9,7 +9,7 @@ ref: Brazelton et al. 2010 PLoS ONE
 journal: >-
     PLoS ONE
 pdf: /pdfs/papers/Brazelton and Baross - 2010 - Metagenomic Comparison of Two Thiomicrospira Linea.pdf
-supplement: 
+supplement: /pdfs/supplements/pone.0013530.s001.xls
 doi: 10.1371/journal.pone.0013530
 ---
 

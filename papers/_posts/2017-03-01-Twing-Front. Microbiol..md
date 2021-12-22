@@ -9,7 +9,7 @@ ref: Twing et al. 2017 Front. Microbiol.
 journal: >-
     Frontiers in Microbiology
 pdf: /pdfs/papers/Twing et al. - 2017 - Serpentinization-Influenced Groundwater Harbors Ex.pdf
-supplement: 
+supplement: https://www.frontiersin.org/articles/10.3389/fmicb.2017.00308/full#supplementary-material
 doi: 10.3389/fmicb.2017.00308
 ---
 

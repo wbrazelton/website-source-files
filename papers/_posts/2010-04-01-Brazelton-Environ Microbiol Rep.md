@@ -9,7 +9,7 @@ ref: Brazelton et al. 2010 Environ Microbiol Rep
 journal: >-
     Environmental Microbiology Reports
 pdf: /pdfs/papers/Brazelton et al. - 2010 - Multiple scales of diversification within natural .pdf
-supplement: 
+supplement: /pdfs/supplements/Brazelton et al. - 2010 - Multiple scales of diversification within natural .pdf
 doi: 10.1111/j.1758-2229.2009.00097.x
 ---
 

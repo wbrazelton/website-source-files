@@ -9,7 +9,7 @@ ref: Thornton et al. 2020 GigaScience
 journal: >-
     GigaScience
 pdf: /pdfs/papers/Thornton et al. - 2020 - Localized effect of treated wastewater effluent on2.pdf
-supplement: 
+supplement: https://github.com/Brazelton-Lab/Thornton_2020
 doi: 10.1093/gigascience/giaa125
 ---
 

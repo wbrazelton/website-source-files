@@ -9,7 +9,7 @@ ref: Morrill et al. 2014 Front. Microbiol.
 journal: >-
     Frontiers in Microbiology
 pdf: /pdfs/papers/Morrill et al. - 2014 - Investigations of potential microbial methanogenic.pdf
-supplement: 
+supplement: /pdfs/supplements/Morrill et al. - 2014 - Investigations of potential microbial methanogenic.xlsx
 doi: 10.3389/fmicb.2014.00613
 ---
 

@@ -9,7 +9,7 @@ ref: McGonigle et al. 2019 mSphere
 journal: >-
     mSphere
 pdf: /pdfs/papers/McGonigle et al. - 2019 - Robust Archaeal and Bacterial Communities Inhabit .pdf
-supplement: 
+supplement: https://doi.org/10.5281/zenodo.2564238
 doi: 10.1128/mSphere.00378-19
 ---
 

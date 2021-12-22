@@ -9,7 +9,7 @@ ref: Brazelton et al. 2013 Appl. Environ. Microbiol.
 journal: >-
     Applied and Environmental Microbiology
 pdf: /pdfs/papers/Brazelton et al. - 2013 - Bacterial Communities Associated with Subsurface G.pdf
-supplement: 
+supplement: /pdfs/supplements/Brazelton et al. - 2013 - Bacterial Communities Associated with Subsurface G.pdf
 doi: 10.1128/AEM.00330-13
 ---
 

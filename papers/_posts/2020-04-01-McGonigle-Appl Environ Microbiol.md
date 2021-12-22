@@ -9,7 +9,7 @@ ref: McGonigle et al. 2020 Appl Environ Microbiol
 journal: >-
     Applied and Environmental Microbiology
 pdf: /pdfs/papers/McGonigle et al. - 2020 - Genomic Evidence for Formate Metabolism by Chlo.pdf
-supplement: 
+supplement: https://doi.org/10.5281/zenodo.3522423
 doi: 10.1128/AEM.02583-19
 ---
 
